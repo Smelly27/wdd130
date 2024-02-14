@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    width: 100%;
+    border: 0px;
+    padding: 0;
+}
+main {
+    background-color: grey;
+    margin: 0;
+    width: 100%;
+    border: 0;
+    padding: 0;
+}
+header {
+    display: grid;
+    justify-content: center;
+    scale: 100%;
+}
+.roundedimage {
+    border-radius: 50%;
+    border: 20px solid #555;
+    width: 20%;
+    margin: 5%;
+}
+div {
+    display: flex;
+    gap: 0;
+
+}

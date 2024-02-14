@@ -34,3 +34,7 @@ ol, li{
 h1.cool{
     font-family: "Times New Roman", Times, serif;
 }
+blockquote {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}

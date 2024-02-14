@@ -1,13 +1,14 @@
-div.content { 
+div#content { 
     width: 1600px;
     margin: 0 auto;
 }
-div.background {
+div#background {
     height: 725px;
 }
 nav a {
     text-align: center;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1 {
     text-align: center;
@@ -21,8 +22,20 @@ nav a {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 body {
 background-color: #FA9A70;
+font-size: 22px;
+margin: 0;
+padding: 0;
+}
+.card-img {
+    border: 10px solid #C8FA70;
+}
+h1 {
+margin: 0;
 }
 h3 {
     color: #A8A743;
@@ -32,20 +45,21 @@ background-color: #82BAB3;
 }
 .home-title {
     color: #A8A743;
+    font-size: 2em;
+    margin-top: 10px;
 }
 nav a:hover {
 background-color: #70FAE8;
 color: #A8A743;
 }
-.book {
-    background-color: #A58C81;
+.book, .join {
+    background-color: #d9c2a3;
     color: #C8FA70;
     text-decoration: none;
-}
-.join {
-    background-color: #00806F;
-    color: #C8FA70;
-    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover {
     background-color: #D03DFA;
@@ -60,16 +74,22 @@ color: #A8A743;
 }
 .msg {
     background-color: #9D81A5;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #FAF400;
 }
 .msg p {
     color: #FAF400;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #508000;
     color: #9B82BA;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer.a {
     color: #9B82BA;
@@ -84,13 +104,23 @@ footer p a:hover {
 footer.a:hover {
     color: #9B82BA;
 }
+footer .social img {
+    padding-top: 15px;
+}
 .logo {
     width: 80px;
     height: 80px;
+}
+#logo_link {
+    padding-top: 5px;
 }
 #hero-img {
     width: 100%;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
