@@ -103,14 +103,13 @@ p.colored {
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
-  text-align: center;
   font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
   display: flex;
-
+  justify-content: center;
+  gap: 3em;
 }
+
+
 nav a {
   padding:1em;
   min-width: 120px;
@@ -173,4 +172,25 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.logo-image {
+  width: 250px;
+  height: auto;
+  max-width: 100%;
+}
+.home-image,
+.us-image,
+.global-image {
+  width: 300px;      /* Adjust width as needed */
+  height: auto;
+  margin: 15px auto;
+  border-radius: 10px; /* Optional for rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Optional for a nice shadow */
+}
+.wireframe-image {
+  width: 250px;     /* or any size you prefer */
+  height: auto;
+  margin: 10px auto;
+  display: block;
 }
