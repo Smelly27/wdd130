@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Dry Oar</title>
+  <link rel="stylesheet" href="styles/style.css"> 
+
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      max-width: 500px;
+      margin: 2em auto;
+      padding: 1em;
+      background: #ffffffcc;
+      border-radius: 8px;
+    }
+
+    #feedback {
+      background-color: antiquewhite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0.5em;
+      display: none;
+    }
+
+    .moveDown {
+      margin-top: 3em;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <header>
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="book-now.html">Book Now</a>
+        <a href="site-plan-rafting.html">Site Plan</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="feedback"></div>
+
+      <form>
+        <label for="user_name">Name:</label>
+        <input type="text" id="user_name" name="user_name" required>
+
+        <label for="user_email">Email:</label>
+        <input type="email" id="user_email" name="user_email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dry Oar Rafting Co. | All rights reserved</p>
+      <p><a href="contactus.html">Contact Us</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const feedbackElement = document.getElementById('feedback');
+    const formElement = document.forms[0];
+
+    formElement.addEventListener('submit', function(e) {
+      e.preventDefault();
+      feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+      feedbackElement.style.display = "block";
+      document.body.classList.toggle('moveDown');
+    });
+  </script>
+</body>
+</html>
