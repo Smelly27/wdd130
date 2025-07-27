@@ -1,0 +1,343 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+  --primary-color: #744700;
+  --secondary-color: #ce7e00;
+  --accent1-color: #e5bc7f;
+  --accent2-color: #ffd34f;
+
+  --heading-font: Georgia, serif;
+  --paragraph-font: 'Courier New', monospace;
+
+  --headline-color-on-white: #396E94;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #396E94;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #396E94;
+  --nav-hover-background-color: #e5bc7f;
+}
+
+body {
+  background-color: var(--accent1-color);
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  margin: 0;
+  color: var(--paragraph-color-on-white);
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-align: center;
+  text-decoration: none;
+  padding: 35px;
+  color: var(--headline-color-on-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--primary-color);
+}
+
+.us-heading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.us-heading h1 {
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+  background-color: rgba(255, 211, 79, 0.7);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  grid-column: 1 / -1;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.intro-block {
+  background-color: var(--accent2-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.intro-block h2 {
+  color: var(--primary-color);
+}
+
+.intro-block p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.travel-showcase {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.travel-showcase h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.travel-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.travel-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.travel-card .location-tag {
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 0.5rem 0;
+  display: block;
+}
+
+.travel-card .destination-description {
+  color: var(--paragraph-color-on-white);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.friends-picks-section {
+  grid-column: 1 / -1;
+  background-color: #fff2e6;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.friends-picks-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.friends-picks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.friend-recommendation {
+  background-color: #fff;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.friend-recommendation img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.friend-recommendation p {
+  color: var(--paragraph-color-on-white);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.friend-recommendation .location-tag {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+.hot-spots-section,
+.budget-friendly-section {
+  background-color: #fff3cd;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 10px;
+  flex: 1 1 48%;
+}
+
+.budget-friendly-section {
+  background-color: #e9f7e9;
+}
+
+.hot-spots-section h2,
+.budget-friendly-section h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hot-spots-table,
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hot-spots-table th,
+.hot-spots-table td,
+.budget-table th,
+.budget-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.hot-spots-table th,
+.budget-table th {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.hot-budget-wrapper {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: var(--accent1-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .social img {
+  padding-top: 15px;
+  width: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .us-grid,
+  .travel-showcase,
+  .friends-picks-grid,
+  .hot-spots-table,
+  .budget-table {
+    grid-template-columns: 1fr;
+  }
+
+  .friend-recommendation {
+    grid-column: 1 / -1;
+  }
+
+  .hot-budget-wrapper {
+    flex-direction: column;
+  }
+
+  nav, footer {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+}

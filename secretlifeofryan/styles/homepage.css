@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+  --primary-color: #744700;
+  --secondary-color: #ce7e00;
+  --accent1-color: #e5bc7f;
+  --accent2-color: #ffd34f;
+
+  --heading-font: Georgia, serif;
+  --paragraph-font: 'Courier New', monospace;
+
+  --headline-color-on-white: #396E94;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #396E94;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #396E94;
+  --nav-hover-background-color: #e5bc7f;
+}
+
+
+body {
+  background-color: var(--accent1-color);
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+nav a {
+  text-align: center;
+  text-decoration: none;
+  padding: 35px;
+  color: var(--headline-color-on-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--primary-color);
+}
+
+
+#hero {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  position: relative;
+  z-index: 1;
+}
+
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#hero-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.home-title {
+  color: var(--secondary-color);
+  font-size: 2em;
+}
+
+.button-box {
+  text-align: center;
+}
+
+.photo-location {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+  font-family: var(--heading-font);
+  opacity: 0.9;
+}
+
+
+.book, .join {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.book:hover, .join:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+
+.home-heading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.home-heading h1 {
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+  background-color: rgba(255, 211, 79, 0.7);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.intro-block {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--accent2-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.intro-block h2 {
+  color: var(--primary-color);
+}
+
+.intro-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--paragraph-color-on-white);
+}
+
+
+.showcase-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  align-items: start;
+}
+
+.travel-showcase {
+  text-align: center;
+}
+
+.travel-showcase h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.friends-section .photo-location {
+  color: var(--primary-color) !important;
+}
+
+.travel-showcase img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 6px solid var(--secondary-color);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  border: 2px solid var(--secondary-color);
+}
+
+.dashboard-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.dashboard-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--paragraph-color-on-white);
+}
+
+.dashboard-card a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-card a:hover {
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+
+.friends-section {
+  max-width: 900px;
+  margin: 2rem auto 5rem;
+  padding: 1.5rem;
+  background-color: var(--accent2-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.friends-section h2 {
+  color: var(--primary-color);
+}
+
+.friends-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--paragraph-color-on-white);
+}
+
+.friends-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: block;
+  margin: 1.5rem auto 0;
+}
+
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: var(--accent1-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .social img {
+  padding-top: 15px;
+  width: 30px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .showcase-dashboard-grid {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .dashboard {
+    margin-top: 2rem;
+  }
+
+  .travel-showcase img {
+    max-width: 100%;
+  }
+
+  nav, footer {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+
+  .friends-section,
+  .intro-block {
+    margin: 1.5rem 1rem;
+  }
+}
